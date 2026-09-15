@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Home.css";
 
 const galleryItems = [
   { id: 1, title: "Peaceful Garden Path", category: "Facilities", desc: "Outdoor spaces designed for mobility and relaxation." },
@@ -57,6 +58,14 @@ export default function Gallery() {
           </div>
         ))}
       </div>
+    
+       {/* Testimonial Section */}
+      <section className="testimonial-section" style={{marginTop:"40px"}}>
+        <blockquote>
+         "Palliative care is the art of matching a patient's care to their goals."
+        </blockquote>
+        <cite>— Dr. Diane Meier</cite>
+      </section>
     </div>
   );
 }
@@ -97,4 +106,20 @@ const styles = {
   cardContent: { padding: "16px" },
   cardTitle: { fontSize: "20px", color: "#006884", margin: "0 0 8px 0" },
   cardDesc: { fontSize: "16px", color: "#1A202C", margin: 0 },
+  testimonialSection: {
+    backgroundColor: '#EAF4F7',
+    padding: '60px 5%',
+    textAlign: 'center',
+  },
+  blockquote: {
+    fontSize: 'clamp(18px, 2.5vw, 24px)',
+    fontStyle: 'italic',
+    color: '#004F64',
+    maxWidth: '800px',
+    margin: '0 auto 16px',
+  },
+  cite: {
+    fontStyle: 'normal',
+    fontWeight: 600,
+  },
 };

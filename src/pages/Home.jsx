@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
 import "./Home.css";
+import nani_carer from "../assets/Gallary/nani.jpg"
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
         </div>
         <div className="hero-image-frame">
           <div className="image-placeholder">
-            <span>[ Caregiver holding hand photo - 16:9 ]</span>
+            <img src={nani_carer} style={{}}/>
           </div>
         </div>
       </section>
@@ -33,12 +34,20 @@ export default function Home() {
             <p>Comprehensive clinical and emotional support provided directly in the comfort of your home.</p>
           </div>
           <div className="card">
-            <h3>Symptom Management</h3>
-            <p>Specialized medical treatments designed to ease pain, fatigue, and distress.</p>
+            <h3>Life Support / Medical Equipments </h3>
+            <p>We provide Oxigen Cylinders, Beds and related equipments to patients.</p>
           </div>
           <div className="card">
-            <h3>Family Counseling</h3>
-            <p>Dedicated guidance, respite care, and emotional counseling for caregivers and families.</p>
+            <h3>Weekly Doctor OP</h3>
+            <p>Our doctor is available for appointents every Thursday.</p>
+          </div>
+          <div className="card">
+            <h3>Volenteer Training</h3>
+            <p>Introductary session for new volunteers from experts from the field.</p>
+          </div>
+          <div className="card">
+            <h3>Monetary Support</h3>
+            <p>We </p>
           </div>
         </div>
       </section>
@@ -46,9 +55,9 @@ export default function Home() {
       {/* Testimonial Section */}
       <section className="testimonial-section">
         <blockquote>
-          "The care team brought peace and clarity to our family during an incredibly difficult journey. We never felt alone."
+          "Palliative care is not about giving up hope; it’s about redefining it."
         </blockquote>
-        <cite>— Sarah M., Family Caregiver</cite>
+        <cite>— Dr. Ira Byock</cite>
       </section>
     </div>
   );

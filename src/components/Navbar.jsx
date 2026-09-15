@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-brand">
-        <Link to="/" className="logo-link">HopeCare Palliative</Link>
+        <Link to="/" className="logo-link">Swanthanam Palliative Logo</Link>
         <button className="hamburger" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
           <span className="bar"></span>
           <span className="bar"></span>
